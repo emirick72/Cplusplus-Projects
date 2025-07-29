@@ -19,7 +19,7 @@ int main(){
     int years[] = {2018, 2015, 2010, 2016, 2012};
     int array_length = 5;
 
-    string dog_names[] = {"Noodle", "Chewzers", "Hot Dog", "Piggy", "Wooly Bear"};
+    string dog_names[] = {"Nimitz", "Susie", "Clyde", "NuNu", "Walter"};
     string dog_breeds[] = {"Shih Tzu Schnauzer", "Mini Schnauzer", 
       "Mini Schnauzer/Dachshund mix", "Bichon Frise", "Wheaten Terrier"};
 
