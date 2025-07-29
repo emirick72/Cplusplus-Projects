@@ -20,6 +20,10 @@ void quicksort_recursion(int array[], int low_index, int high_index);
 // Partition function declaration
 int partition(int array[], int low_index, int high_index);
 
+
+//-----------------------------------------------
+
+
 int main(){
     int years[] = {2018, 2015, 2010, 2016, 2012};
     int array_length = 5;
@@ -30,15 +34,14 @@ int main(){
     // Output the sorted array
     for (int i = 0; i < array_length; i++)
     {
-        cout << years[i] << " - " << "dog name";
+        cout << years[i] << " - " << "adopted " << "(dog's name here)" << endl;
     }
-    cout << endl << endl;
-    cout << "IT WORKS YAY" << endl;
+    cout << endl;
 
     return 0;
 }
 
-//-----------------------------
+//-----------------------------------------------
 
 // Quicksort wrapper function definition
 void quicksort(int array[], int array_length)
