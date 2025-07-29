@@ -4,7 +4,14 @@
   
   For practice only.
   
-  July 29, 2025*/
+  Date: July 29, 2025
+  
+  -----------------------------------------------------
+  TODO: SEPARATE THE FUNCTION DECLARATIONS AND DEFINITIONS INTO DIFFERENT FILES
+  AND MAKE A NEW .VSCODE TASKS JSON FILE TO COMPILE AND LINK IT ALL TOGETHER.
+  
+  
+  */
 
 
 #include <iostream>
@@ -28,13 +35,20 @@ int main(){
     int years[] = {2018, 2015, 2010, 2016, 2012};
     int array_length = 5;
 
+    string dog_names[] = {"Nimitz", "Susie", "Clyde", "NuNu", "Walter"};
+    string dog_breeds[] = {"Shih Tzu Schnauzer", "Mini Schnauzer", 
+      "Mini Schnauzer/Dachshund mix", "Bichon Frise", "Wheaten Terrier"};
+
     // Sort the array with the quicksort function
     quicksort(years, array_length);
+
+    cout << "Years that my family adopted our dogs:" << endl;
 
     // Output the sorted array
     for (int i = 0; i < array_length; i++)
     {
-        cout << years[i] << " - " << "adopted " << "(dog's name here)" << endl;
+        cout << years[i] << " - " << "adopted " << dog_names[i] << 
+        " (" << dog_breeds[i] << ")" << endl;
     }
     cout << endl;
 
