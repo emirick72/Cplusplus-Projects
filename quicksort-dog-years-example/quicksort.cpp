@@ -1,0 +1,43 @@
+// Define functions that are declared in "quicksort.h"
+// file here
+
+#include <utility>
+#include "quicksort.h"
+
+using namespace std;
+
+// Quicksort wrapper function definition
+void quicksort(int array[], int array_length)
+{
+    quicksort_recursion(array, 0, array_length - 1);
+}
+
+// Recursion function definition
+void quicksort_recursion(int array[], int low_index, int high_index)
+{
+    if (low_index < high_index)
+    {
+        int pivot_index = partition(array, low_index, high_index);
+        quicksort_recursion(array, low_index, pivot_index - 1);
+        quicksort_recursion(array, pivot_index + 1, high_index);
+    }
+}
+
+// Partition function definition
+int partition(int array[], int low_index, int high_index)
+{
+    // do something here lol
+    int pivot_value = array[high_index];
+    int i = low_index;
+    for (int j = low_index; j < high_index; j++)
+    {
+        if (array[j] <= pivot_value)
+        {
+            swap(array[i], array[j]);
+            i++;
+        }
+    }
+    swap(array[i], array[high_index]);
+
+    return i;
+}

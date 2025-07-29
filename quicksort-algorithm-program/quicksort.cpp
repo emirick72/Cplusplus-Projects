@@ -8,6 +8,7 @@
 
 using namespace std;
 
+// NOTE: these are function declarations
 // Recursive function for algorithm
 void quicksort(int array[], int length);
 void quicksort_recursion(int array[], int low, int high);
@@ -31,6 +32,7 @@ int main()
     return 0;
 }
 
+// NOTE: these are function definitions
 // Implement quicksort wrapper function
 void quicksort(int array[], int length)
 {
@@ -60,7 +62,7 @@ int partition(int array[], int low, int high)
     {
         swap(array[pivot_index], array[high]);
     }
-
+//----------------------------------------------
     int pivot_value = array[high];
     int i = low;
     for (int j = low; j < high; j++)
